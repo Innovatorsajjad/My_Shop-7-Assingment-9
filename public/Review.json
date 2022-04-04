@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "userImage": "https://images.ctfassets.net/lh3zuq09vnm2/yBDals8aU8RWtb0xLnPkI/19b391bda8f43e16e64d40b55561e5cd/How_tracking_user_behavior_on_your_website_can_improve_customer_experience.png",
+        "comments":"It's a good website. very usefull to use and buy gadguds.",
+        "rating": "4.3"
+    },
+    {
+        "id": 2,
+        "userImage": "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MXx8fGVufDB8fHx8&w=1000&q=80",
+        "comments":"It's a good website. very usefull to use and buy gadguds.",
+        "rating": "5"
+    },
+    {
+        "id": 3,
+        "userImage": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dXNlcnxlbnwwfHwwfHw%3D&w=1000&q=80",
+        "comments":"It's a good website. very usefull to use and buy gadguds.",
+        "rating": "4"
+    },
+    {
+        "id": 4,
+        "userImage": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHBlcnNvbmFibGV8ZW58MHx8MHx8&w=1000&q=80",
+        "comments":"It's a good website. very usefull to use and buy gadguds.",
+        "rating": "5"
+    },
+    {
+        "id": 5,
+        "userImage": "https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWVuJTIwcG9ydHJhaXR8ZW58MHx8MHx8&w=1000&q=80",
+        "comments":"It's a good website. very usefull to use and buy gadguds.",
+        "rating": "3"
+    },
+    {
+        "id": 6,
+        "userImage": "https://mir-s3-cdn-cf.behance.net/project_modules/fs/0962e428832949.55d48f60621a3.jpg",
+        "comments":"It's a good website. very usefull to use and buy gadguds.",
+        "rating": "4.5"
+    }
+]
