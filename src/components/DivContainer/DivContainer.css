@@ -1,3 +1,23 @@
 .TomatoColor{
     color: tomato;
 }
+.TomatoButton{
+    border: none;
+    background-color: tomato;
+    padding:10px 25px;
+    border: 1px solid tomato;
+    border-radius: 20px 0;
+    transition: .5s;
+}
+.TomatoButton .BtnText{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .5s;
+}
+.TomatoButton:hover{
+    background-color: transparent;
+}
+.TomatoButton:hover .BtnText{
+    color: tomato;
+}
