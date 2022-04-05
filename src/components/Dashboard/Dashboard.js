@@ -38,10 +38,10 @@ const DashBoard = () => {
     ]
 
     return (
-        <div className="three_charts row">
+        <div className="container three_charts row d-flex w-100">
                     <div className=''>
         {/* Area Chart */}
-        <div className='container justify-center mt-5 col-md-4 '>
+        <div className='mt-5 col-md-3 '>
         <h3 className='text-center'>Area chart</h3>
             <AreaChart width={400} height={250} data={data}
   margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
@@ -67,7 +67,7 @@ const DashBoard = () => {
 
         {/* Pie chart */}
         
-        <div className="second_chart mt-5 container justify-center col-md-4">
+        <div className="second_chart  col-md-3">
             <h3 className='text-center'>Pie chart</h3>
     <PieChart width={430} height={250}>
     <Pie data={data} dataKey="sell" nameKey="month" cx="50%" cy="50%" outerRadius={50} fill="#8884d8" />
@@ -78,7 +78,7 @@ const DashBoard = () => {
 
 
         {/* Reader Chart */}
-        <div className="reader_chart container justify-center container mt-5 container justify-center col-md-4">
+        <div className="reader_chart  col-md-3">
             <h3 className='text-center'>Reader Chart</h3>
         <RadarChart outerRadius={90} width={500} height={250} data={data}>
             <PolarGrid />
