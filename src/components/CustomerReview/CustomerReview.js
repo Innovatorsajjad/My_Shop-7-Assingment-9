@@ -1,10 +1,11 @@
 import React from 'react';
+import "./CustomerReview.css";
 
 const CustomerReview = (props) => {
-    const{name}=props.review
+    const{name,userImage}=props.review
     return (
-        <div>
-           <h3>{name}</h3>
+        <div className="card">
+            <img src={userImage} alt="" />
         </div>
     );
 };
