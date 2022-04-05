@@ -1,10 +1,8 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
-import "./CustomerReview.css";
 
-const CustomerReview = (props) => {
+const ReviewsOfProjects = (props) => {
     const { name, userImage , comments,rating } = props.review
-    console.log(props.review)
     return (
         <div className="col-md-4 mt-4 d-flex ">
             <Card style={{ width: '18rem' }}>
@@ -23,4 +21,4 @@ const CustomerReview = (props) => {
     );
 };
 
-export default CustomerReview;
+export default ReviewsOfProjects;

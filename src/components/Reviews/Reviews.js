@@ -1,9 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import CustomerReview from '../CustomerReview/CustomerReview';
 
 const Reviews = () => {
+    const [reviws, setReviews] = useState([]);
+    useEffect(() => {
+        fetch("Review.json")
+            .then(Response => Response.json())
+            .then(data => setReviews(data));
+    }, [])
     return (
-        <div>
-            
+        <div d-flex row>
+            {
+                reviws.map((review) => (
+                    <CustomerReview key={review.id} review={review}></CustomerReview>
+                ))
+            }
         </div>
     );
 };

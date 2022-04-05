@@ -1,4 +1,5 @@
  import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import CustomerReview from '../CustomerReview/CustomerReview';
  import "./DivContainer.css"
  
@@ -22,7 +23,7 @@ import CustomerReview from '../CustomerReview/CustomerReview';
                  <img className='img-fluid rounded' src="https://cdn.mos.cms.futurecdn.net/6t8Zh249QiFmVnkQdCCtHK.jpg" alt="" />
              </div>
 
-             <div className='reviews'>
+             <div className='reviews d-flex justify-content-around row'>
                  
                  {
                      reviws.slice(0, 3).map((review) => (
@@ -31,7 +32,7 @@ import CustomerReview from '../CustomerReview/CustomerReview';
                  }
                 
              </div>
-             <button className='TomatoButton w-25 mt-5'><a href="#"  class="BtnText mb-4">See More Reviews</a></button>
+              <Link className='TomatoButton w-25 mt-5 td-none ' to="/reviews"><a  className="BtnText mb-4 td-none">Reviews</a></Link>
          </div>
      );
  };
