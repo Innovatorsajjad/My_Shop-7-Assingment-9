@@ -9,7 +9,7 @@ const Reviews = () => {
             .then(data => setReviews(data));
     }, [])
     return (
-        <div d-flex row>
+        <div className='d-flex row'>
             {
                 reviws.map((review) => (
                     <CustomerReview key={review.id} review={review}></CustomerReview>

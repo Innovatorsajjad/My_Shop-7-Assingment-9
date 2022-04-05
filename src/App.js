@@ -7,6 +7,7 @@ import Dashboard from './components/Dashboard/Dashboard';
 import Blogs from './components/Blogs/Blogs';
 import About from './components/About/About';
 import Reviews from './components/Reviews/Reviews';
+import NotFound from './components/NotFound/NotFound';
 
 
 
@@ -22,7 +23,9 @@ function App() {
        <Route path='/reviews' element={<Reviews/>} />;
        <Route path='/blogs' element={<Blogs/>} />;
        <Route path='/about' element={<About/>} />;
-       <Route path='/dashboard' element={<Dashboard/>} />; 
+       <Route path='/dashboard' element={<Dashboard/>} />;
+       <Route path='*' element= {<NotFound/>}/>
+
      </Routes>
     </>
   );
