@@ -38,8 +38,11 @@ const DashBoard = () => {
     ]
 
     return (
-        <>
-        <div className='container justify-center mt-5 '>
+        <div className="three_charts row">
+                    <div className=''>
+        {/* Area Chart */}
+        <div className='container justify-center mt-5 col-md-4 '>
+        <h3 className='text-center'>Area chart</h3>
             <AreaChart width={400} height={250} data={data}
   margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
   <defs>
@@ -64,7 +67,8 @@ const DashBoard = () => {
 
         {/* Pie chart */}
         
-        <div className="second_chart mt-5">
+        <div className="second_chart mt-5 container justify-center col-md-4">
+            <h3 className='text-center'>Pie chart</h3>
     <PieChart width={430} height={250}>
     <Pie data={data} dataKey="sell" nameKey="month" cx="50%" cy="50%" outerRadius={50} fill="#8884d8" />
     <Pie data={data} dataKey="investment" nameKey="revenue" cx="50%" cy="50%" innerRadius={60} outerRadius={80} fill="#82ca9d" label />
@@ -72,8 +76,11 @@ const DashBoard = () => {
         </div>
 
 
+
         {/* Reader Chart */}
-            <RadarChart outerRadius={90} width={500} height={250} data={data}>
+        <div className="reader_chart container justify-center container mt-5 container justify-center col-md-4">
+            <h3 className='text-center'>Reader Chart</h3>
+        <RadarChart outerRadius={90} width={500} height={250} data={data}>
             <PolarGrid />
             <PolarAngleAxis dataKey="subject" />
             <PolarRadiusAxis angle={30} domain={[0, 150]} />
@@ -81,7 +88,9 @@ const DashBoard = () => {
             <Radar name="month" dataKey="sell" stroke="#82ca9d" fill="#82ca9d" fillOpacity={0.6} />
             <Legend />
             </RadarChart>
-        </>
+        </div>
+        </div>
+        </div>
 
     );
 };
