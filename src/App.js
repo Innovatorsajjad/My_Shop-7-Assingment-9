@@ -1,8 +1,11 @@
 import './App.css';
-import { Routes, Route, Link } from "react-router-dom";
-import Home from './components/Home/Home';
+import { Routes, Route} from "react-router-dom";
 import Header from './components/Header/Header'
-import DivContaienr from './components/DivContainer/DivContainer';
+import DivContainer from './components/DivContainer/DivContainer';
+import Dashboard from './components/Dashboard/Dashboard';
+import Reviews from './components/Reviews/Reviews';
+import Blogs from './components/Blogs/Blogs';
+import About from './components/About/About';
 
 
 
@@ -10,17 +13,17 @@ import DivContaienr from './components/DivContainer/DivContainer';
 
 function App() {
   return (
-  <div>
+  <>
      <Header/>
-     
+
       <Routes>
-        
-       <Route path='/' element={<Home/>} />
-       <Route path='/container' element={<DivContaienr/>} />
-
-
+       <Route path='/' element={<DivContainer/>} />
+       <Route path='/reviews' element={<Reviews/>} />
+       <Route path='/blogs' element={<Blogs/>} />
+       <Route path='/about' element={<About/>} />
+       <Route path='/dashboard' element={<Dashboard/>} />
      </Routes>
-    </div>
+    </>
   );
 }
 
