@@ -1,6 +1,5 @@
  import React, { useEffect, useState } from 'react';
 import CustomerReview from '../CustomerReview/CustomerReview';
-import Reviews from '../Reviews/Reviews';
  import "./DivContainer.css"
  
  const DivContainer = () => {
@@ -32,7 +31,7 @@ import Reviews from '../Reviews/Reviews';
                  }
                 
              </div>
-             
+             <button className='TomatoButton w-25 mt-5'><a href="#"  class="BtnText mb-4">See More Reviews</a></button>
          </div>
      );
  };
