@@ -1,5 +1,5 @@
 import React from 'react';
-import { Area, AreaChart, CartesianGrid, Line, LineChart, Tooltip, XAxis, YAxis } from 'recharts';
+import { Area, AreaChart, CartesianGrid, Legend, Pie, PieChart, PolarAngleAxis, PolarGrid, PolarRadiusAxis, Radar, RadarChart, Tooltip, XAxis, YAxis } from 'recharts';
 
 
 
@@ -38,6 +38,7 @@ const DashBoard = () => {
     ]
 
     return (
+        <>
         <div className='container justify-center mt-5 '>
             <AreaChart width={400} height={250} data={data}
   margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
@@ -59,6 +60,28 @@ const DashBoard = () => {
   <Area type="monotone" dataKey="sell" stroke="#82ca9d" fillOpacity={1} fill="url(#colorPv)" />
 </AreaChart>
         </div>
+
+
+        {/* Pie chart */}
+        
+        <div className="second_chart mt-5">
+    <PieChart width={430} height={250}>
+    <Pie data={data} dataKey="sell" nameKey="month" cx="50%" cy="50%" outerRadius={50} fill="#8884d8" />
+    <Pie data={data} dataKey="investment" nameKey="revenue" cx="50%" cy="50%" innerRadius={60} outerRadius={80} fill="#82ca9d" label />
+    </PieChart>
+        </div>
+
+
+        {/* Reader Chart */}
+            <RadarChart outerRadius={90} width={500} height={250} data={data}>
+            <PolarGrid />
+            <PolarAngleAxis dataKey="subject" />
+            <PolarRadiusAxis angle={30} domain={[0, 150]} />
+            <Radar name="month" dataKey="investment" stroke="#8884d8" fill="#8884d8" fillOpacity={0.6} />
+            <Radar name="month" dataKey="sell" stroke="#82ca9d" fill="#82ca9d" fillOpacity={0.6} />
+            <Legend />
+            </RadarChart>
+        </>
 
     );
 };
